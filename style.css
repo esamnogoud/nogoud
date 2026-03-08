@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Inter", sans-serif;
+}
+#main{
+    background-color: rgb(255, 230, 230);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#contactform{
+width: 450px;
+background-color: #fff;
+padding: 3rem 2rem;
+border-radius: 8px;
+box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+#contactform h1{
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+#contactform .form-control{
+    margin: 20px 0;
+}
+#contactform .form-control label{
+    display: block;
+    margin-bottom: 5px;
+}
+/* Error */
+#contactform .form-control.error span{
+    visibility: visible;
+}
+#contactform .form-control.error input,
+#contactform .form-control.error textarea{
+    border-color: #fe3737;
+}
+
+#contactform .form-control input,
+#contactform .form-control textarea{
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #e0e0e0;
+}
+#contactform .form-control input:focus,
+#contactform .form-control textarea:focus{
+    outline: 0;
+    border-color: #fe3737;
+}
+#contactform .form-control span{
+    color: #fe3737;
+    font-size: 14px;
+    visibility: hidden;
+}
+#contactform .btn-submit{
+width: 100%;
+padding: 12px;
+background-color: #fe3737;
+color: #fff;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
